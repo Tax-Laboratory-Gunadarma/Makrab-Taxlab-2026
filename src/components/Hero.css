@@ -49,13 +49,38 @@
   font-weight: 700;
   letter-spacing: 0.02em;
   box-shadow: var(--shadow-rest);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
 }
 
 .hero__cta:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-hover);
   background-color: #96678f;
+}
+
+/* --- posisi bunga di dalam hero__bg --- */
+/* Desktop: sama persis seperti translate() lama */
+.hero__flower--right {
+  transform: translate(880px, 470px);
+}
+
+.hero__flower--left {
+  transform: translate(150px, 500px);
+}
+
+/* Mobile: karena preserveAspectRatio="slice" nge-crop tepi kiri/kanan SVG,
+   bunga digeser masuk ke zona tengah viewBox biar tetap kelihatan */
+@media (max-width: 640px) {
+  .hero__flower--right {
+    transform: translate(700px, 500px);
+  }
+
+  .hero__flower--left {
+    transform: translate(480px, 470px);
+  }
 }
 
 /* --- rumput animasi di bagian bawah hero --- */
@@ -75,19 +100,11 @@
   display: inline-block;
   width: 6px;
   height: 70px;
-  background: linear-gradient(to top, var(--color-sage-dark), var(--color-sage));
+  background: linear-gradient(
+    to top,
+    var(--color-sage-dark),
+    var(--color-sage)
+  );
   border-radius: 6px 6px 0 0;
   transform-origin: bottom center;
-  animation: sway 3.2s ease-in-out infinite;
-  animation-delay: calc(var(--i) * 0.15s);
-}
-
-@keyframes sway {
-  0%, 100% { transform: rotate(-4deg); }
-  50% { transform: rotate(4deg); }
-}
-
-@media (max-width: 640px) {
-  .hero__grass { height: 50px; }
-  .hero__blade { height: 40px; }
 }

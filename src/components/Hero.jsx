@@ -36,10 +36,8 @@ export default function Hero() {
           fill="var(--color-sage-dark)"
         />
 
-        {/* siluet tenda camping sederhana */}
         {/* Bunga 1 - kombinasi oranye & kuning mustard */}
-        <g transform="translate(880,470)">
-          {/* 5 kelopak, disusun melingkar pakai rotate biar rapi & gampang di-maintain */}
+        <g className="hero__flower hero__flower--right">
           <g fill="#e08a3c">
             <ellipse cx="0" cy="-28" rx="16" ry="26" transform="rotate(0)" />
             <ellipse cx="0" cy="-28" rx="16" ry="26" transform="rotate(72)" />
@@ -47,14 +45,12 @@ export default function Hero() {
             <ellipse cx="0" cy="-28" rx="16" ry="26" transform="rotate(216)" />
             <ellipse cx="0" cy="-28" rx="16" ry="26" transform="rotate(288)" />
           </g>
-          {/* putik di tengah */}
           <circle cx="0" cy="0" r="14" fill="#f2c94c" />
-          {/* tangkai */}
           <rect x="-3" y="14" width="6" height="40" fill="#5b8c5a" />
         </g>
 
         {/* Bunga 2 - kombinasi teal & ungu tua */}
-        <g transform="translate(150,500)">
+        <g className="hero__flower hero__flower--left">
           <g fill="#3a8f8a">
             <ellipse cx="0" cy="-22" rx="13" ry="20" transform="rotate(0)" />
             <ellipse cx="0" cy="-22" rx="13" ry="20" transform="rotate(72)" />
