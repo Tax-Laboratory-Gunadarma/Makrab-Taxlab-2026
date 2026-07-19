@@ -107,4 +107,25 @@
   );
   border-radius: 6px 6px 0 0;
   transform-origin: bottom center;
+  animation: sway 3.2s ease-in-out infinite;
+  animation-delay: calc(var(--i) * 0.15s);
+}
+
+@keyframes sway {
+  0%,
+  100% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+}
+
+@media (max-width: 640px) {
+  .hero__grass {
+    height: 50px;
+  }
+  .hero__blade {
+    height: 40px;
+  }
 }
