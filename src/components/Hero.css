@@ -1,0 +1,93 @@
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: var(--color-bg);
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 720px;
+  padding: 0 var(--space-md);
+}
+
+.hero__title {
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  font-weight: 600;
+  color: var(--color-ink);
+  margin-top: var(--space-xs);
+}
+
+.hero__subtitle {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(1.05rem, 2.4vw, 1.4rem);
+  color: var(--color-mauve);
+  margin-top: var(--space-sm);
+}
+
+.hero__cta {
+  display: inline-block;
+  margin-top: var(--space-lg);
+  padding: 0.9rem 2.2rem;
+  background-color: var(--color-mauve);
+  color: var(--color-cream);
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  box-shadow: var(--shadow-rest);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.hero__cta:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+  background-color: #96678f;
+}
+
+/* --- rumput animasi di bagian bawah hero --- */
+.hero__grass {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 90px;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero__blade {
+  display: inline-block;
+  width: 6px;
+  height: 70px;
+  background: linear-gradient(to top, var(--color-sage-dark), var(--color-sage));
+  border-radius: 6px 6px 0 0;
+  transform-origin: bottom center;
+  animation: sway 3.2s ease-in-out infinite;
+  animation-delay: calc(var(--i) * 0.15s);
+}
+
+@keyframes sway {
+  0%, 100% { transform: rotate(-4deg); }
+  50% { transform: rotate(4deg); }
+}
+
+@media (max-width: 640px) {
+  .hero__grass { height: 50px; }
+  .hero__blade { height: 40px; }
+}

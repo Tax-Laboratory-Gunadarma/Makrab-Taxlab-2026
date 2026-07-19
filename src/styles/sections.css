@@ -1,0 +1,49 @@
+.section__heading {
+  font-size: clamp(1.9rem, 4vw, 2.6rem);
+  font-weight: 600;
+  color: var(--color-ink);
+  margin-top: var(--space-xs);
+}
+
+.map-placeholder {
+  margin-top: var(--space-sm);
+  height: 120px;
+  border-radius: var(--radius-sm);
+  background: repeating-linear-gradient(
+    45deg,
+    var(--color-mauve-soft),
+    var(--color-mauve-soft) 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  border: 1px dashed var(--color-mauve);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: var(--color-mauve);
+}
+
+.registrasi__button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: var(--space-sm);
+  padding: 0.85rem 1.8rem;
+  background-color: var(--color-ink);
+  color: var(--color-cream);
+  border-radius: 999px;
+  font-weight: 700;
+  width: fit-content;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.registrasi__button:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: var(--shadow-hover);
+  background-color: var(--color-mauve);
+}
+
+.registrasi__button:active {
+  transform: translateY(-1px) scale(0.99);
+}

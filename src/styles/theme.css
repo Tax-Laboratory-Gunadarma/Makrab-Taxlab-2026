@@ -1,0 +1,58 @@
+/* =========================================================
+   THEME TOKENS — Makrab Tax Laboratory
+   Tema: Soft Spring · Ladang Rumput · Camping
+   Semua warna & font didefinisikan SEKALI di sini.
+   Kalau mau ganti warna nanti, cukup ubah di file ini saja.
+   ========================================================= */
+
+@import '@fontsource/fraunces/400.css';
+@import '@fontsource/fraunces/500-italic.css';
+@import '@fontsource/fraunces/600.css';
+@import '@fontsource/plus-jakarta-sans/400.css';
+@import '@fontsource/plus-jakarta-sans/500.css';
+@import '@fontsource/plus-jakarta-sans/700.css';
+
+:root {
+  /* --- Warna dasar (dari brief kamu) --- */
+  --color-bg: #ecdade;        /* background utama */
+  --color-pink: #f6b8c4;      /* aksen pink */
+  --color-mauve: #a979a1;     /* aksen mauve (dominan) */
+
+  /* --- Warna pendukung, diturunkan dari tema camping/ladang rumput --- */
+  --color-sage: #93a878;      /* rumput / daun */
+  --color-sage-dark: #6d8259; /* rumput bayangan */
+  --color-canvas: #ecc9a3;    /* warna kain tenda */
+  --color-ink: #402a3d;       /* teks utama, plum gelap (bukan hitam pekat) */
+  --color-cream: #fbf3ee;     /* putih hangat, untuk card/teks di atas gelap */
+
+  /* --- Warna fungsional turunan (opacity/tint) --- */
+  --color-mauve-soft: #a979a11a;   /* mauve 10% untuk border/hover */
+  --color-pink-soft: #f6b8c433;    /* pink 20% untuk glow */
+  --color-border: #a9799144;       /* border tipis default */
+
+  /* --- Tipografi --- */
+  --font-display: 'Fraunces', 'Georgia', serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+
+  /* --- Radius & shadow (biar konsisten di semua card) --- */
+  --radius-lg: 28px;
+  --radius-md: 20px;
+  --radius-sm: 14px;
+  --shadow-rest: 0 2px 10px rgba(64, 42, 61, 0.06);
+  --shadow-hover: 0 16px 32px rgba(169, 121, 161, 0.28);
+
+  /* --- Spacing skala (pakai ini daripada angka random) --- */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.75rem;
+  --space-lg: 3rem;
+  --space-xl: 5rem;
+}
+
+/* Hormati preferensi user yang sensitif motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
