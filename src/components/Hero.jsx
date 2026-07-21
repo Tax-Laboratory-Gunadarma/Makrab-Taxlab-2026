@@ -76,7 +76,7 @@ export default function Hero() {
         <p className="hero__subtitle">
           Taxnity: Building Connections, Growing Together
         </p>
-        <a href="#registrasi" className="hero__cta">
+        <a href="#tanggal-lokasi" className="hero__cta">
           Daftar Sekarang
         </a>
       </div>
