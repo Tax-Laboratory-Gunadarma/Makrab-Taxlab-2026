@@ -151,6 +151,39 @@
   background: rgba(255, 255, 255, 0.5);
 }
 
+.card-location__map {
+  margin-top: 1rem;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.card-location__map iframe {
+  display: block;
+  width: 100%;
+}
+
+.card-location__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 0.75rem 1.2rem;
+  border-radius: 999px;
+  background: var(--color-primary);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.card-location__button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+
+
 /* ---------- Kartu dress code ---------- */
 
 .card-dresscode__title {
@@ -162,6 +195,8 @@
   font-size: 0.9rem;
   opacity: 0.75;
 }
+
+
 
 /* ---------- Tombol CTA registrasi ---------- */
 

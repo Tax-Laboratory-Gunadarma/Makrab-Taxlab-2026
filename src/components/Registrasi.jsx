@@ -2,7 +2,7 @@ import BentoCard from "./BentoCard";
 import "./BentoGrid.css";
 
 // TODO: ganti link ini dengan link Google Form pendaftaran yang asli
-const GOOGLE_FORM_URL = "https://forms.gle/oHEQs5EV1URHiS5v5";
+const GOOGLE_FORM_URL = " https://forms.gle/5mVcVwZRBbj1Abrb8";
 
 export default function Registrasi() {
   return (
@@ -19,7 +19,7 @@ export default function Registrasi() {
           Seluruh anggota Tax Laboratory yaitu Asisten, Staff, maupun Alumni.
         </BentoCard>
 
-        <BentoCard span="square" eyebrow="Biaya" title="Rp 00.000">
+        <BentoCard span="square" eyebrow="Biaya" title="Rp 295.000">
           Sudah termasuk konsumsi, penginapan, dan perlengkapan kegiatan.
         </BentoCard>
 

@@ -20,7 +20,7 @@ export default function TanggalLokasi() {
           <p className="card-date__month">Agustus 2026</p>
 
           <p className="card-date__sub">
-            Sabtu &middot; Minggu &middot; Rangkaian Acara
+            Sabtu  &middot;  Minggu 
           </p>
 
           <LeafWatermark />
@@ -32,17 +32,38 @@ export default function TanggalLokasi() {
             <span>Lokasi</span>
           </div>
 
-          <h3 className="card-location__title">Villa Gajah Duduk</h3>
+          <h3 className="card-location__title">Villa Lexus 4</h3>
+
           <p className="card-location__desc">
-            {/* TODO: ganti dengan alamat lengkap */}
-            Jl. Gajah Duduk nomor sekian.
+            Jl. Raya Puncak, Cisarua,
+            <br />
+            Kabupaten Bogor, Jawa Barat
           </p>
 
-          {/* TODO: ganti dengan embed map asli */}
-          <div className="map-placeholder">Peta lokasi (placeholder)</div>
+          <div className="card-location__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.6802089873577!2d106.95436637676993!3d-6.6864769933088635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69b70000ec1dd5%3A0x545233b32544662a!2sVilla%20Lexus%204!5e0!3m2!1sid!2sid!4v1784646259813!5m2!1sid!2sid"
+              width="100%"
+              height="220"
+              style={{ border: 0 }}
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="strict-origin-when-cross-origin"
+              title="Villa Lexus 4"
+            />
+          </div>
+
+          <a
+            href="https://maps.google.com/?q=Villa+Lexus+4+Cisarua+Bogor"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="card-location__button"
+          >
+            📍 Buka di Google Maps
+          </a>
 
           <TreeWatermark />
-        </BentoCard>
+</BentoCard>
 
         <BentoCard span="tall" tone="default" className="card--dresscode">
           <div className="card__badge card__badge--muted">
@@ -51,8 +72,16 @@ export default function TanggalLokasi() {
           </div>
 
           <h3 className="card-dresscode__title">Atasan Putih</h3>
+
           <p className="card-dresscode__desc">
-            Disarankan membawa atasan putih untuk di hari kedua.
+            Disarankan membawa atasan putih untuk digunakan pada hari kedua.
+          </p>
+
+
+          <h4 className="card-dresscode__subtitle">Warna Pastel</h4>
+
+          <p className="card-dresscode__note">
+            Digunakan saat kepulangan (Hari ke-2).
           </p>
         </BentoCard>
       </div>
