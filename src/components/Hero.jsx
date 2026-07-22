@@ -71,7 +71,6 @@ export default function Hero() {
       </div>
 
       <div className="hero__content">
-        <p className="eyebrow">Malam Keakraban</p>
         <h1 className="hero__title">Makrab Tax Laboratory</h1>
         <p className="hero__subtitle">
           Taxnity: Building Connections, Growing Together

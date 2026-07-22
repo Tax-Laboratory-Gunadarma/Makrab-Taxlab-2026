@@ -71,10 +71,10 @@ export default function TanggalLokasi() {
             <span>Dress Code</span>
           </div>
 
-          <h3 className="card-dresscode__title">Atasan Putih</h3>
+          <h3 className="card-dresscode__title">Warna Pastel</h3>
 
           <p className="card-dresscode__desc">
-            Disarankan membawa atasan putih untuk digunakan pada hari kedua.
+            Disarankan membawa pakaian berwarna pastel
           </p>
 
 
