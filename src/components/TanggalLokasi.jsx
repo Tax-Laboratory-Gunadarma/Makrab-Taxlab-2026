@@ -77,9 +77,6 @@ export default function TanggalLokasi() {
             Disarankan membawa pakaian berwarna pastel
           </p>
 
-
-          <h4 className="card-dresscode__subtitle">Warna Pastel</h4>
-
           <p className="card-dresscode__note">
             Digunakan saat kepulangan (Hari ke-2).
           </p>
